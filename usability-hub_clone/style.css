@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
@@ -50,6 +50,10 @@ a{
    display: inline-block;
 }
 
+li{
+   list-style-type: none;
+}
+
 /* ==================================== */
 
 
@@ -61,7 +65,7 @@ a{
 /* ================== */
 .small-bold-text{
    font-size: 1rem;
-   font-weight: 700;
+   font-weight: 600;
 }
 
 
@@ -69,6 +73,33 @@ a{
    max-width: 1180px;   
    margin-inline: auto;
 }
+
+.flex{
+   display: flex;
+   align-items: center;
+}
+
+.primary-button{
+   background-color: var(--accent-color);
+   border-radius: 6px;
+   font-weight: 600;
+   color: white;
+   padding: 10px 20px;
+   
+   transition: all 0.2s ease-in-out;
+}
+.primary-button:hover{
+   background: var(--accent-color-dark);
+}
+
+.secondary-button{
+   border-radius: 6px;
+   padding: 10px 20px;
+   font-weight: 600;
+}
+
+
+/* ================== */
 
 
 /* Section: top-banner */
@@ -82,6 +113,52 @@ a{
 }
 
 
+
+
+/* Section: Navbar */
+.main-nav{
+   justify-content: space-between;
+   padding: 20px 0px;
+   /* border: 2px solid red; */
+}
+
+.company-logo img{
+   width: 200px;
+   
+}
+
+.nav-links{
+   flex-basis: 730px;
+   /* border: 2px solid blue; */
+}
+
+.nav-links ul{
+   justify-content: space-between;
+}
+
+.nav-links ul li a{
+   color: var(--primary-color);
+   transition: all 0.2s ease-in-out;
+
+}
+
+.nav-links ul li a:hover{
+   color: var(--accent-color);
+}
+
+
+.signin{
+   border: 1px solid var(--accent-color);
+   padding: 10px 20px;
+   border-radius: 4px;
+}
+
+
+
+.signup{
+   /* background: var(--accent-color); */
+   color: #fff !important;
+}
 
 
 
